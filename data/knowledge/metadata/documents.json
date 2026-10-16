@@ -1,0 +1,76 @@
+{
+  "documents": [
+    {
+      "id": "process_mining_basics",
+      "name": "Process Mining Basics",
+      "filename": "process_mining_basics.txt",
+      "path": "data/knowledge/uploaded/process_mining_basics/process_mining_basics.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T08:56:53.227524",
+      "updated_at": "2026-09-22T11:45:49.342242"
+    },
+    {
+      "id": "process_metrics",
+      "name": "Process Metrics",
+      "filename": "process_metrics.txt",
+      "path": "data/knowledge/uploaded/process_metrics/process_metrics.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T08:56:56.919685",
+      "updated_at": "2026-09-22T11:45:49.342968"
+    },
+    {
+      "id": "adaptation_rules",
+      "name": "Adaptation Rules",
+      "filename": "adaptation_rules.txt",
+      "path": "data/knowledge/uploaded/adaptation_rules/adaptation_rules.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T08:57:02.938781",
+      "updated_at": "2026-09-22T11:45:49.343324"
+    },
+    {
+      "id": "01_process_quality_rules",
+      "name": "01_process_quality_rules",
+      "filename": "01_process_quality_rules.txt",
+      "path": "data/knowledge/uploaded/01_process_quality_rules/01_process_quality_rules.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T09:26:31.835704",
+      "updated_at": "2026-09-22T11:45:49.343668"
+    },
+    {
+      "id": "02_adaptation_rules",
+      "name": "02_adaptation_rules",
+      "filename": "02_adaptation_rules.txt",
+      "path": "data/knowledge/uploaded/02_adaptation_rules/02_adaptation_rules.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T09:27:02.598087",
+      "updated_at": "2026-09-22T11:45:49.343991"
+    },
+    {
+      "id": "04_business_process_policy",
+      "name": "04_business_process_policy",
+      "filename": "04_business_process_policy.txt",
+      "path": "data/knowledge/uploaded/04_business_process_policy/04_business_process_policy.txt",
+      "format": "txt",
+      "status": "indexed",
+      "indexed": true,
+      "chunks": 1,
+      "uploaded_at": "2026-09-21T09:41:13.850829",
+      "updated_at": "2026-09-22T11:45:49.344298"
+    }
+  ]
+}

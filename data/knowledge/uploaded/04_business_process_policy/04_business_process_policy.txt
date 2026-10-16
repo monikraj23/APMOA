@@ -1,0 +1,12 @@
+Business Process Policy
+
+Requests normally follow:
+Create Request -> Review Request -> Approve Request -> Process Request -> Complete Request.
+
+Rejected requests may follow:
+Review Request -> Reject Request -> Correct Request -> Review Request.
+
+Repeated Review Request or Approve Request activities can indicate rework.
+Long delays around Review Request or Process Request should be investigated as potential bottlenecks.
+
+Process improvement actions should preserve valid business exceptions while reducing unnecessary delay and repetition.

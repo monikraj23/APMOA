@@ -1,0 +1,773 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="alpha_plus_net_1789923999.3224719" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>alpha_plus_net_1789923999.3224719</text>
+    </name>
+    <page id="n0">
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})">
+        <name>
+          <text>({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})">
+        <name>
+          <text>({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})</text>
+        </name>
+      </place>
+      <place id="({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})">
+        <name>
+          <text>({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})">
+        <name>
+          <text>({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})">
+        <name>
+          <text>({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})</text>
+        </name>
+      </place>
+      <place id="({'Declaration FINAL_APPROVED by DIRECTOR', 'Start trip'}, {'End trip'})">
+        <name>
+          <text>({'Declaration FINAL_APPROVED by DIRECTOR', 'Start trip'}, {'End trip'})</text>
+        </name>
+      </place>
+      <place id="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})">
+        <name>
+          <text>({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})</text>
+        </name>
+      </place>
+      <place id="({'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment APPROVED by SUPERVISOR'}, {'End trip'})">
+        <name>
+          <text>({'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment APPROVED by SUPERVISOR'}, {'End trip'})</text>
+        </name>
+      </place>
+      <place id="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})">
+        <name>
+          <text>({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})">
+        <name>
+          <text>({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})">
+        <name>
+          <text>({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by SUPERVISOR'}, {'Permit REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit APPROVED by SUPERVISOR'}, {'Permit REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})">
+        <name>
+          <text>({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION'}, {'Permit REJECTED by BUDGET OWNER', 'Permit APPROVED by BUDGET OWNER'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION'}, {'Permit REJECTED by BUDGET OWNER', 'Permit APPROVED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})">
+        <name>
+          <text>({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})</text>
+        </name>
+      </place>
+      <place id="({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})">
+        <name>
+          <text>({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})">
+        <name>
+          <text>({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})">
+        <name>
+          <text>({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})</text>
+        </name>
+      </place>
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by BUDGET OWNER'})">
+        <name>
+          <text>({'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by BUDGET OWNER'})</text>
+        </name>
+      </place>
+      <place id="({'Request For Payment APPROVED by SUPERVISOR'}, {'Request For Payment FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Request For Payment APPROVED by SUPERVISOR'}, {'Request For Payment FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})">
+        <name>
+          <text>({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})</text>
+        </name>
+      </place>
+      <place id="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})">
+        <name>
+          <text>({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})</text>
+        </name>
+      </place>
+      <transition id="artificial_end">
+        <name>
+          <text>artificial_end</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="958bda54-6d18-414c-9dc9-ef6c937ce181"/>
+      </transition>
+      <transition id="Permit SUBMITTED by EMPLOYEE">
+        <name>
+          <text>Permit SUBMITTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Permit APPROVED by ADMINISTRATION">
+        <name>
+          <text>Permit APPROVED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by EMPLOYEE">
+        <name>
+          <text>Permit REJECTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by PRE_APPROVER">
+        <name>
+          <text>Declaration REJECTED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Declaration APPROVED by BUDGET OWNER">
+        <name>
+          <text>Declaration APPROVED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment APPROVED by BUDGET OWNER">
+        <name>
+          <text>Request For Payment APPROVED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment SUBMITTED by EMPLOYEE">
+        <name>
+          <text>Request For Payment SUBMITTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by BUDGET OWNER">
+        <name>
+          <text>Request For Payment REJECTED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Permit FOR_APPROVAL by SUPERVISOR">
+        <name>
+          <text>Permit FOR_APPROVAL by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Permit SAVED by EMPLOYEE">
+        <name>
+          <text>Permit SAVED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment APPROVED by SUPERVISOR">
+        <name>
+          <text>Request For Payment APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Permit FOR_APPROVAL by ADMINISTRATION">
+        <name>
+          <text>Permit FOR_APPROVAL by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Permit FINAL_APPROVED by SUPERVISOR">
+        <name>
+          <text>Permit FINAL_APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration FINAL_APPROVED by SUPERVISOR">
+        <name>
+          <text>Declaration FINAL_APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by ADMINISTRATION">
+        <name>
+          <text>Declaration REJECTED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Declaration SAVED by EMPLOYEE">
+        <name>
+          <text>Declaration SAVED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="End trip">
+        <name>
+          <text>End trip</text>
+        </name>
+      </transition>
+      <transition id="Permit FINAL_APPROVED by DIRECTOR">
+        <name>
+          <text>Permit FINAL_APPROVED by DIRECTOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration APPROVED by SUPERVISOR">
+        <name>
+          <text>Declaration APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration FINAL_APPROVED by DIRECTOR">
+        <name>
+          <text>Declaration FINAL_APPROVED by DIRECTOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration SUBMITTED by EMPLOYEE">
+        <name>
+          <text>Declaration SUBMITTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by SUPERVISOR">
+        <name>
+          <text>Declaration REJECTED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by DIRECTOR">
+        <name>
+          <text>Permit REJECTED by DIRECTOR</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by DIRECTOR">
+        <name>
+          <text>Declaration REJECTED by DIRECTOR</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment FINAL_APPROVED by DIRECTOR">
+        <name>
+          <text>Request For Payment FINAL_APPROVED by DIRECTOR</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment FINAL_APPROVED by SUPERVISOR">
+        <name>
+          <text>Request For Payment FINAL_APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by ADMINISTRATION">
+        <name>
+          <text>Request For Payment REJECTED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Declaration APPROVED by PRE_APPROVER">
+        <name>
+          <text>Declaration APPROVED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by ADMINISTRATION">
+        <name>
+          <text>Permit REJECTED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="artificial_start">
+        <name>
+          <text>artificial_start</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="133f55c7-ebaf-44d2-ac08-96d3a765b533"/>
+      </transition>
+      <transition id="Request Payment">
+        <name>
+          <text>Request Payment</text>
+        </name>
+      </transition>
+      <transition id="Declaration APPROVED by ADMINISTRATION">
+        <name>
+          <text>Declaration APPROVED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by SUPERVISOR">
+        <name>
+          <text>Permit REJECTED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Start trip">
+        <name>
+          <text>Start trip</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by PRE_APPROVER">
+        <name>
+          <text>Permit REJECTED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment SAVED by EMPLOYEE">
+        <name>
+          <text>Request For Payment SAVED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Payment Handled">
+        <name>
+          <text>Payment Handled</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by EMPLOYEE">
+        <name>
+          <text>Declaration REJECTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by EMPLOYEE">
+        <name>
+          <text>Request For Payment REJECTED by EMPLOYEE</text>
+        </name>
+      </transition>
+      <transition id="Permit APPROVED by SUPERVISOR">
+        <name>
+          <text>Permit APPROVED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by BUDGET OWNER">
+        <name>
+          <text>Permit REJECTED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by MISSING">
+        <name>
+          <text>Request For Payment REJECTED by MISSING</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by MISSING">
+        <name>
+          <text>Declaration REJECTED by MISSING</text>
+        </name>
+      </transition>
+      <transition id="Send Reminder">
+        <name>
+          <text>Send Reminder</text>
+        </name>
+      </transition>
+      <transition id="Declaration REJECTED by BUDGET OWNER">
+        <name>
+          <text>Declaration REJECTED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment APPROVED by PRE_APPROVER">
+        <name>
+          <text>Request For Payment APPROVED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Permit APPROVED by PRE_APPROVER">
+        <name>
+          <text>Permit APPROVED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Permit APPROVED by BUDGET OWNER">
+        <name>
+          <text>Permit APPROVED by BUDGET OWNER</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by PRE_APPROVER">
+        <name>
+          <text>Request For Payment REJECTED by PRE_APPROVER</text>
+        </name>
+      </transition>
+      <transition id="Permit REJECTED by MISSING">
+        <name>
+          <text>Permit REJECTED by MISSING</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment APPROVED by ADMINISTRATION">
+        <name>
+          <text>Request For Payment APPROVED by ADMINISTRATION</text>
+        </name>
+      </transition>
+      <transition id="Request For Payment REJECTED by SUPERVISOR">
+        <name>
+          <text>Request For Payment REJECTED by SUPERVISOR</text>
+        </name>
+      </transition>
+      <arc id="5621532160" source="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})" target="Permit APPROVED by SUPERVISOR"/>
+      <arc id="5621546496" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621542912" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621539328" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})"/>
+      <arc id="5621535744" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Request For Payment REJECTED by MISSING"/>
+      <arc id="5362610176" source="Permit SAVED by EMPLOYEE" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623010304" source="Permit APPROVED by PRE_APPROVER" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621534736" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5621538320" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621545488" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621541904" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})"/>
+      <arc id="5365571088" source="Declaration APPROVED by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623005712" source="Permit REJECTED by BUDGET OWNER" target="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})"/>
+      <arc id="5623009296" source="Permit REJECTED by ADMINISTRATION" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621533728" source="({'Permit APPROVED by ADMINISTRATION'}, {'Permit REJECTED by BUDGET OWNER', 'Permit APPROVED by BUDGET OWNER'})" target="Permit APPROVED by BUDGET OWNER"/>
+      <arc id="5621544480" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by PRE_APPROVER"/>
+      <arc id="5621540896" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Declaration FINAL_APPROVED by DIRECTOR', 'Start trip'}, {'End trip'})"/>
+      <arc id="5621537312" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5623008288" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623011872" source="Declaration REJECTED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623019040" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623015456" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Request For Payment REJECTED by SUPERVISOR"/>
+      <arc id="5621532720" source="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})" target="Permit REJECTED by PRE_APPROVER"/>
+      <arc id="5621543472" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by PRE_APPROVER"/>
+      <arc id="5621539888" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621536304" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5365576240" source="Declaration REJECTED by DIRECTOR" target="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5624705584" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623007280" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5623010864" source="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5623010080" source="Permit REJECTED by PRE_APPROVER" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621535296" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5621538880" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621542464" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})"/>
+      <arc id="5362609728" source="Declaration REJECTED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5623006272" source="({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})" target="Permit APPROVED by SUPERVISOR"/>
+      <arc id="5623009856" source="Permit FOR_APPROVAL by ADMINISTRATION" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621534288" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5621537872" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5621545040" source="Permit APPROVED by BUDGET OWNER" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621541456" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})"/>
+      <arc id="5624696400" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5623005264" source="Permit REJECTED by DIRECTOR" target="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})"/>
+      <arc id="5623008848" source="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})" target="Start trip"/>
+      <arc id="5621533280" source="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})" target="Permit APPROVED by PRE_APPROVER"/>
+      <arc id="5621544032" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5621540448" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})"/>
+      <arc id="5621536864" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5365576800" source="End trip" target="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5623007840" source="Permit REJECTED by ADMINISTRATION" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5623009072" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621532272" source="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621546608" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit APPROVED by SUPERVISOR"/>
+      <arc id="5621543024" source="Permit APPROVED by BUDGET OWNER" target="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621539440" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5621535856" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by MISSING"/>
+      <arc id="5624708720" source="Permit REJECTED by MISSING" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624705136" source="Request For Payment SAVED by EMPLOYEE" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624701552" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623006832" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623010416" source="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})" target="Start trip"/>
+      <arc id="5621545600" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621542016" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5621538432" source="End trip" target="({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5362605696" source="Declaration REJECTED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621544592" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5365655696" source="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})" target="Permit SAVED by EMPLOYEE"/>
+      <arc id="5362604688" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623008400" source="Permit REJECTED by PRE_APPROVER" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621543584" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FOR_APPROVAL by ADMINISTRATION"/>
+      <arc id="5621540000" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Request For Payment REJECTED by MISSING"/>
+      <arc id="5621536416" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5624702112" source="Permit REJECTED by EMPLOYEE" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362603680" source="Permit REJECTED by EMPLOYEE" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362607264" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623010976" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623014560" source="Permit REJECTED by EMPLOYEE" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623007392" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5623013664" source="Declaration REJECTED by ADMINISTRATION" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621546160" source="Permit APPROVED by BUDGET OWNER" target="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})"/>
+      <arc id="5621542576" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621538992" source="({'Declaration FINAL_APPROVED by DIRECTOR', 'Start trip'}, {'End trip'})" target="End trip"/>
+      <arc id="5362606256" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623006384" source="({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5623013552" source="Declaration REJECTED by ADMINISTRATION" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621530816" source="Request For Payment SAVED by EMPLOYEE" target="({'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by BUDGET OWNER'})"/>
+      <arc id="5621534400" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621545152" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621541568" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5365656256" source="Declaration APPROVED by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362605248" source="Permit SAVED by EMPLOYEE" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623008960" source="Permit REJECTED by MISSING" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623012544" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623005376" source="Permit REJECTED by PRE_APPROVER" target="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})"/>
+      <arc id="5623016128" source="Request For Payment REJECTED by SUPERVISOR" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621544144" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5621540560" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Permit REJECTED by MISSING"/>
+      <arc id="5623007952" source="Request For Payment REJECTED by MISSING" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5623015120" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Request For Payment REJECTED by SUPERVISOR"/>
+      <arc id="5621543136" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5621546720" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5621539552" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Permit REJECTED by MISSING"/>
+      <arc id="5624708832" source="Permit REJECTED by ADMINISTRATION" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624701664" source="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5362606816" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623006944" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5623010528" source="Permit APPROVED by BUDGET OWNER" target="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})"/>
+      <arc id="5621545712" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5621542128" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Permit REJECTED by MISSING"/>
+      <arc id="5621538544" source="({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5624707824" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624700656" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362605808" source="Declaration REJECTED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623013104" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623020272" source="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5623005936" source="Request For Payment SAVED by EMPLOYEE" target="({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})"/>
+      <arc id="5623009520" source="Request For Payment REJECTED by MISSING" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621544704" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5621541120" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Permit REJECTED by MISSING"/>
+      <arc id="5621537536" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5365659392" source="Permit REJECTED by MISSING" target="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})"/>
+      <arc id="5365655808" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362608384" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5362604800" source="Permit REJECTED by ADMINISTRATION" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623015680" source="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5623008512" source="Permit FOR_APPROVAL by ADMINISTRATION" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621532944" source="Permit SUBMITTED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})"/>
+      <arc id="5621543696" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621540112" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Declaration APPROVED by SUPERVISOR"/>
+      <arc id="5362603792" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})"/>
+      <arc id="5623018256" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623007504" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5623011088" source="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})" target="Request For Payment APPROVED by SUPERVISOR"/>
+      <arc id="5623014672" source="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})" target="Declaration REJECTED by ADMINISTRATION"/>
+      <arc id="5621531936" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})"/>
+      <arc id="5621546272" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit REJECTED by PRE_APPROVER"/>
+      <arc id="5621542688" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5621539104" source="Start trip" target="({'Declaration FINAL_APPROVED by DIRECTOR', 'Start trip'}, {'End trip'})"/>
+      <arc id="5365579040" source="Permit REJECTED by ADMINISTRATION" target="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5624708384" source="Declaration APPROVED by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624701216" source="Declaration REJECTED by DIRECTOR" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5624694048" source="Permit SAVED by EMPLOYEE" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5362606368" source="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5362602784" source="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5621530928" source="({'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by BUDGET OWNER'})" target="Permit APPROVED by BUDGET OWNER"/>
+      <arc id="5621534512" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})" target="Permit FINAL_APPROVED by SUPERVISOR"/>
+      <arc id="5621545264" source="Permit SUBMITTED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})"/>
+      <arc id="5621541680" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621538096" source="Permit APPROVED by SUPERVISOR" target="({'Permit APPROVED by SUPERVISOR'}, {'Permit REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5365659952" source="artificial_start" target="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})"/>
+      <arc id="5365652784" source="Permit REJECTED by ADMINISTRATION" target="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5365645616" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment APPROVED by SUPERVISOR'}, {'End trip'})"/>
+      <arc id="5362605360" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362608944" source="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5621533504" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION'}, {'Permit REJECTED by BUDGET OWNER', 'Permit APPROVED by BUDGET OWNER'})"/>
+      <arc id="5621544256" source="Permit SUBMITTED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621540672" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621537088" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by SUPERVISOR"/>
+      <arc id="5365655360" source="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})" target="Permit SUBMITTED by EMPLOYEE"/>
+      <arc id="5624695616" source="Permit REJECTED by ADMINISTRATION" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5362604352" source="Request For Payment FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623008064" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5623016240" source="Permit REJECTED by MISSING" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621532496" source="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})" target="Permit REJECTED by PRE_APPROVER"/>
+      <arc id="5621543248" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5362603344" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621531488" source="Request For Payment APPROVED by SUPERVISOR" target="({'Request For Payment APPROVED by SUPERVISOR'}, {'Request For Payment FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621545824" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit APPROVED by SUPERVISOR"/>
+      <arc id="5621542240" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5621538656" source="({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621535072" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5365653344" source="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5365646176" source="Request For Payment APPROVED by SUPERVISOR" target="({'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment APPROVED by SUPERVISOR'}, {'End trip'})"/>
+      <arc id="5365571424" source="Permit REJECTED by MISSING" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5365564256" source="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5623006048" source="Permit REJECTED by ADMINISTRATION" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623009632" source="Permit SAVED by EMPLOYEE" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621534064" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5621544816" source="Permit SUBMITTED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621541232" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Request For Payment APPROVED by SUPERVISOR"/>
+      <arc id="5621537648" source="({'Permit APPROVED by SUPERVISOR'}, {'Permit REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by DIRECTOR"/>
+      <arc id="5365659504" source="Permit REJECTED by EMPLOYEE" target="({'Permit REJECTED by MISSING', 'artificial_start', 'Permit REJECTED by EMPLOYEE'}, {'Permit SUBMITTED by EMPLOYEE', 'Permit SAVED by EMPLOYEE'})"/>
+      <arc id="5623019376" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623008624" source="Permit APPROVED by PRE_APPROVER" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5621533056" source="start" target="artificial_start"/>
+      <arc id="5621543808" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5621536640" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5623018368" source="Permit REJECTED by ADMINISTRATION" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623007616" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5623014784" source="Request For Payment REJECTED by SUPERVISOR" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5623020832" source="Permit REJECTED by SUPERVISOR" target="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})"/>
+      <arc id="5621532048" source="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})" target="Permit FOR_APPROVAL by ADMINISTRATION"/>
+      <arc id="5621546384" source="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit FOR_APPROVAL by ADMINISTRATION"/>
+      <arc id="5621539216" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Request For Payment SAVED by EMPLOYEE"/>
+      <arc id="5621535632" source="Permit APPROVED by ADMINISTRATION" target="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})"/>
+      <arc id="5365571984" source="Request For Payment SAVED by EMPLOYEE" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5362610064" source="Declaration FINAL_APPROVED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5623010192" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})"/>
+      <arc id="5621531040" source="Permit SUBMITTED by EMPLOYEE" target="({'Permit SUBMITTED by EMPLOYEE', 'Request For Payment SAVED by EMPLOYEE'}, {'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER'})"/>
+      <arc id="5621534624" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER'})" target="Permit APPROVED by SUPERVISOR"/>
+      <arc id="5621545376" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5621538208" source="({'End trip'}, {'Declaration APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5365645728" source="({'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment APPROVED by SUPERVISOR'}, {'End trip'})" target="End trip"/>
+      <arc id="5623019936" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623005600" source="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})" target="Permit REJECTED by EMPLOYEE"/>
+      <arc id="5623016352" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Request For Payment REJECTED by SUPERVISOR"/>
+      <arc id="5621533616" source="({'Permit APPROVED by ADMINISTRATION'}, {'Permit REJECTED by BUDGET OWNER', 'Permit APPROVED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5621540784" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})" target="Request For Payment REJECTED by MISSING"/>
+      <arc id="5365659056" source="({'Permit APPROVED by ADMINISTRATION', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by BUDGET OWNER'})" target="Permit REJECTED by BUDGET OWNER"/>
+      <arc id="5365651888" source="Request For Payment SAVED by EMPLOYEE" target="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5365577136" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5362608048" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Permit SAVED by EMPLOYEE', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'artificial_end'})"/>
+      <arc id="5623008176" source="artificial_start" target="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5623015344" source="Request For Payment REJECTED by SUPERVISOR" target="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621532608" source="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})" target="Permit APPROVED by ADMINISTRATION"/>
+      <arc id="5621539776" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})"/>
+      <arc id="5624705472" source="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5362610624" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623010752" source="Request For Payment REJECTED by MISSING" target="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})"/>
+      <arc id="5623014336" source="({'Permit REJECTED by ADMINISTRATION', 'artificial_start', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})" target="Declaration REJECTED by ADMINISTRATION"/>
+      <arc id="5623006496" source="Declaration REJECTED by DIRECTOR" target="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621531600" source="({'Request For Payment APPROVED by SUPERVISOR'}, {'Request For Payment FINAL_APPROVED by DIRECTOR'})" target="Request For Payment FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5621535184" source="Permit APPROVED by BUDGET OWNER" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR'})"/>
+      <arc id="5621545936" source="Permit APPROVED by PRE_APPROVER" target="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR'})"/>
+      <arc id="5621542352" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})"/>
+      <arc id="5365571536" source="Permit REJECTED by EMPLOYEE" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623006160" source="Permit APPROVED by PRE_APPROVER" target="({'Request For Payment SAVED by EMPLOYEE', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit APPROVED by SUPERVISOR'})"/>
+      <arc id="5623009744" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Start trip'})"/>
+      <arc id="5623013216" source="Request For Payment SAVED by EMPLOYEE" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5621534176" source="artificial_end" target="end"/>
+      <arc id="5621541344" source="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment APPROVED by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE'})" target="Request For Payment APPROVED by SUPERVISOR"/>
+      <arc id="5621537760" source="({'Permit APPROVED by SUPERVISOR'}, {'Permit REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR'})" target="Request For Payment FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5365652448" source="Permit SAVED by EMPLOYEE" target="({'Declaration APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5365577696" source="({'Permit REJECTED by ADMINISTRATION', 'End trip', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5365570528" source="Permit FOR_APPROVAL by SUPERVISOR" target="({'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Request For Payment SAVED by EMPLOYEE', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623008736" source="({'Permit FOR_APPROVAL by SUPERVISOR', 'Permit SAVED by EMPLOYEE', 'Permit REJECTED by ADMINISTRATION', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})" target="artificial_end"/>
+      <arc id="5623015904" source="({'Permit APPROVED by PRE_APPROVER', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Request For Payment REJECTED by SUPERVISOR"/>
+      <arc id="5621533168" source="({'Permit SUBMITTED by EMPLOYEE'}, {'Permit APPROVED by ADMINISTRATION', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER', 'Permit REJECTED by PRE_APPROVER'})" target="Permit FOR_APPROVAL by ADMINISTRATION"/>
+      <arc id="5621543920" source="Permit APPROVED by BUDGET OWNER" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5621540336" source="Permit FINAL_APPROVED by SUPERVISOR" target="({'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'}, {'Declaration APPROVED by SUPERVISOR', 'Permit REJECTED by MISSING', 'Request For Payment SAVED by EMPLOYEE', 'Request For Payment REJECTED by MISSING'})"/>
+      <arc id="5624706032" source="Permit FINAL_APPROVED by DIRECTOR" target="({'Permit FINAL_APPROVED by DIRECTOR', 'Permit FOR_APPROVAL by SUPERVISOR', 'Declaration REJECTED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623018480" source="Declaration REJECTED by DIRECTOR" target="({'Permit REJECTED by MISSING', 'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by ADMINISTRATION', 'Declaration REJECTED by DIRECTOR', 'Request For Payment FINAL_APPROVED by DIRECTOR', 'Declaration FINAL_APPROVED by DIRECTOR', 'Request For Payment SAVED by EMPLOYEE'}, {'artificial_end'})"/>
+      <arc id="5623007728" source="({'Permit APPROVED by ADMINISTRATION', 'Permit APPROVED by PRE_APPROVER'}, {'Permit REJECTED by SUPERVISOR', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit REJECTED by BUDGET OWNER', 'Permit FINAL_APPROVED by DIRECTOR'})" target="Permit FINAL_APPROVED by DIRECTOR"/>
+      <arc id="5623011312" source="({'Permit APPROVED by PRE_APPROVER', 'Request For Payment REJECTED by MISSING', 'Permit APPROVED by BUDGET OWNER'}, {'Permit REJECTED by SUPERVISOR', 'Request For Payment APPROVED by SUPERVISOR', 'Permit FOR_APPROVAL by SUPERVISOR'})" target="Permit FOR_APPROVAL by SUPERVISOR"/>
+      <arc id="5623014896" source="Request For Payment REJECTED by SUPERVISOR" target="({'Permit SUBMITTED by EMPLOYEE', 'Permit APPROVED by BUDGET OWNER'}, {'Permit FOR_APPROVAL by SUPERVISOR', 'Permit REJECTED by PRE_APPROVER', 'Permit FOR_APPROVAL by ADMINISTRATION', 'Permit FINAL_APPROVED by SUPERVISOR', 'Permit FINAL_APPROVED by DIRECTOR'})"/>
+      <arc id="5623005488" source="Permit REJECTED by ADMINISTRATION" target="({'Permit REJECTED by SUPERVISOR', 'Permit REJECTED by DIRECTOR', 'Permit REJECTED by ADMINISTRATION', 'Permit REJECTED by PRE_APPROVER', 'Permit REJECTED by BUDGET OWNER'}, {'Permit REJECTED by EMPLOYEE'})"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

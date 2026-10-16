@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-20260922-114549",
+  "created_at": "2026-09-22T11:45:49.345017",
+  "updated_at": "2026-09-22T11:55:51.440461",
+  "dataset_name": "PermitLog.xes",
+  "dataset_path": "data/datasets/uploaded/bpi_2020_travel_permit/PermitLog.xes.gz",
+  "description": "APMOA autonomous process-mining execution",
+  "status": "completed",
+  "max_iterations": 3,
+  "workflow": "data_analysis -> process_discovery -> evaluation -> selection -> reasoning -> adaptation -> process_intelligence -> optimization",
+  "final_model": "Split Miner",
+  "final_action": "keep_model",
+  "iterations": 1,
+  "selection_score": null,
+  "fitness": 0.9742005515865352,
+  "precision": 0.6386556804571495,
+  "generalization": 0.8564319555177802,
+  "simplicity": 0.5642458100558659
+}

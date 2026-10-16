@@ -1,0 +1,52 @@
+{
+  "datasets": [
+    {
+      "id": "bpi_2020_travel_permit",
+      "name": "BPI 2020 Travel Permit",
+      "filename": "PermitLog.xes.gz",
+      "path": "data/datasets/uploaded/bpi_2020_travel_permit/PermitLog.xes.gz",
+      "format": "xes.gz",
+      "events": 86581,
+      "cases": 7065,
+      "activities": 51,
+      "resources": 2,
+      "valid": true,
+      "validation_error": null,
+      "uploaded_at": "2026-09-21T08:41:55.152803",
+      "updated_at": "2026-09-21T08:41:55.152803",
+      "status": "validated"
+    },
+    {
+      "id": "bpi_2012",
+      "name": "BPI 2012",
+      "filename": "BPI_Challenge_2012.xes.gz",
+      "path": "data/datasets/uploaded/bpi_2012/BPI_Challenge_2012.xes.gz",
+      "format": "xes.gz",
+      "events": 262200,
+      "cases": 13087,
+      "activities": 24,
+      "resources": 69,
+      "valid": true,
+      "validation_error": null,
+      "uploaded_at": "2026-09-21T08:42:10.050230",
+      "updated_at": "2026-09-21T08:42:10.050230",
+      "status": "validated"
+    },
+    {
+      "id": "mock_event_log",
+      "name": "mock_event_log",
+      "filename": "mock_event_log.csv",
+      "path": "data/datasets/uploaded/mock_event_log/mock_event_log.csv",
+      "format": "csv",
+      "events": 167,
+      "cases": 28,
+      "activities": 7,
+      "resources": 2,
+      "valid": true,
+      "validation_error": null,
+      "uploaded_at": "2026-09-21T09:43:45.277479",
+      "updated_at": "2026-09-21T09:43:45.277479",
+      "status": "validated"
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+{
+  "experiment_id": "EXP-20260922-000953",
+  "dataset_name": "mock_event_log",
+  "dataset_path": "data/datasets/uploaded/mock_event_log/mock_event_log.csv",
+  "diagnostics": {
+    "basic_statistics": {
+      "events": 167,
+      "cases": 28,
+      "activities": 7,
+      "average_events_per_case": 5.96,
+      "median_events_per_case": 5.0,
+      "min_events_per_case": 5,
+      "max_events_per_case": 8
+    },
+    "variant_statistics": {
+      "number_of_variants": 3,
+      "singleton_variants": 0,
+      "rare_variants_<=5_cases": 1,
+      "dominant_variant_cases": 17,
+      "dominant_variant_percentage": 60.71
+    },
+    "activity_statistics": [
+      {
+        "activity": "Review Request",
+        "frequency": 39,
+        "percentage": 23.3533
+      },
+      {
+        "activity": "Approve Request",
+        "frequency": 34,
+        "percentage": 20.3593
+      },
+      {
+        "activity": "Create Request",
+        "frequency": 28,
+        "percentage": 16.7665
+      },
+      {
+        "activity": "Process Request",
+        "frequency": 28,
+        "percentage": 16.7665
+      },
+      {
+        "activity": "Complete Request",
+        "frequency": 28,
+        "percentage": 16.7665
+      },
+      {
+        "activity": "Reject Request",
+        "frequency": 5,
+        "percentage": 2.994
+      },
+      {
+        "activity": "Correct Request",
+        "frequency": 5,
+        "percentage": 2.994
+      }
+    ],
+    "case_duration": {
+      "average_duration_hours": 2.44,
+      "median_duration_hours": 1.5,
+      "minimum_duration_hours": 1.08,
+      "maximum_duration_hours": 7.25
+    },
+    "repetition_statistics": {
+      "cases_with_repeated_activities": 11,
+      "percentage_cases_with_repetition": 39.29,
+      "maximum_activity_repetition": 2
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "selected_model": "Split Miner",
+      "evaluation": {
+        "model": "Split Miner",
+        "model_type": "BPMN",
+        "fitness": 0.9692307692307692,
+        "precision": 0.973404255319149,
+        "generalization": 0.7438570515055211,
+        "simplicity": 1.0,
+        "places": 7,
+        "transitions": 7,
+        "arcs": 14,
+        "evaluation_time": 0.01621413230895996,
+        "status": "SUCCESS"
+      },
+      "reasoning": {
+        "observation": "The currently selected model is Split Miner, exhibiting high fitness (0.969), high precision (0.973), good generalization (0.743857) and the highest simplicity score (1.0).",
+        "diagnosis": "No critical quality problem exists; the model achieves a balanced trade‑off across all metrics.",
+        "evidence": [
+          "Split Miner fitness 0.969231 > Alpha+ Miner 0.960346 and > Heuristics Miner 0.938865",
+          "Split Miner precision 0.973404 > Alpha+ Miner 0.905983 and > Heuristics Miner 0.893204",
+          "Split Miner simplicity 1.0 > all other models",
+          "Inductive Miner has perfect fitness but very low precision (0.363636), indicating over‑generalisation, but it is not the selected model",
+          "Alpha Miner has perfect precision but low fitness (0.859425), making it unsuitable for representing observed behaviour"
+        ],
+        "recommended_action": "keep_model",
+        "reasoning": "The Split Miner model provides the best overall balance: it has the highest simplicity, near‑perfect fitness and precision, and matches the best generalization among all models. The only model with higher fitness (Inductive Miner) suffers from very low precision, while the only model with perfect precision (Alpha Miner) has poor fitness. Therefore, keeping the current model preserves the best trade‑off and no rediscovery is warranted.",
+        "confidence": 0.95,
+        "reasoning_source": "llm",
+        "rag_used": true,
+        "rag_enabled": true,
+        "rag_top_k": 3,
+        "rag_retrieved_count": 3,
+        "rag_sources": [
+          "process_metrics.txt",
+          "adaptation_rules.txt",
+          "process_mining_basics.txt"
+        ],
+        "rag_initialization_error": ""
+      },
+      "adaptation": {
+        "action_type": "keep_model",
+        "action": "keep_model",
+        "strategy": "none",
+        "target": "current_model",
+        "current_model": "Split Miner",
+        "next_algorithm": null,
+        "reason": "All configured quality requirements are satisfied. Reasoning Agent recommended keep_model. The current Split Miner model will be retained.",
+        "parameters": {},
+        "attempted": [],
+        "iteration": 1,
+        "quality_check": {
+          "quality_ok": true,
+          "violations": [],
+          "metrics": {
+            "fitness": 0.9692307692307692,
+            "precision": 0.973404255319149,
+            "generalization": 0.7438570515055211,
+            "simplicity": 1.0
+          },
+          "policy": {
+            "fitness_min": 0.8,
+            "precision_min": 0.5,
+            "generalization_min": 0.7,
+            "simplicity_min": 0.4
+          }
+        },
+        "policy_triggered": false,
+        "reasoning_action": "keep_model"
+      }
+    }
+  ],
+  "iterations": 1,
+  "final_model": "Split Miner",
+  "final_evaluation": {
+    "model": "Split Miner",
+    "model_type": "BPMN",
+    "fitness": 0.9692307692307692,
+    "precision": 0.973404255319149,
+    "generalization": 0.7438570515055211,
+    "simplicity": 1.0,
+    "places": 7,
+    "transitions": 7,
+    "arcs": 14,
+    "evaluation_time": 0.01621413230895996,
+    "status": "SUCCESS"
+  },
+  "final_reasoning": {
+    "observation": "The currently selected model is Split Miner, exhibiting high fitness (0.969), high precision (0.973), good generalization (0.743857) and the highest simplicity score (1.0).",
+    "diagnosis": "No critical quality problem exists; the model achieves a balanced trade‑off across all metrics.",
+    "evidence": [
+      "Split Miner fitness 0.969231 > Alpha+ Miner 0.960346 and > Heuristics Miner 0.938865",
+      "Split Miner precision 0.973404 > Alpha+ Miner 0.905983 and > Heuristics Miner 0.893204",
+      "Split Miner simplicity 1.0 > all other models",
+      "Inductive Miner has perfect fitness but very low precision (0.363636), indicating over‑generalisation, but it is not the selected model",
+      "Alpha Miner has perfect precision but low fitness (0.859425), making it unsuitable for representing observed behaviour"
+    ],
+    "recommended_action": "keep_model",
+    "reasoning": "The Split Miner model provides the best overall balance: it has the highest simplicity, near‑perfect fitness and precision, and matches the best generalization among all models. The only model with higher fitness (Inductive Miner) suffers from very low precision, while the only model with perfect precision (Alpha Miner) has poor fitness. Therefore, keeping the current model preserves the best trade‑off and no rediscovery is warranted.",
+    "confidence": 0.95,
+    "reasoning_source": "llm",
+    "rag_used": true,
+    "rag_enabled": true,
+    "rag_top_k": 3,
+    "rag_retrieved_count": 3,
+    "rag_sources": [
+      "process_metrics.txt",
+      "adaptation_rules.txt",
+      "process_mining_basics.txt"
+    ],
+    "rag_initialization_error": ""
+  },
+  "final_adaptation": {
+    "action_type": "keep_model",
+    "action": "keep_model",
+    "strategy": "none",
+    "target": "current_model",
+    "current_model": "Split Miner",
+    "next_algorithm": null,
+    "reason": "All configured quality requirements are satisfied. Reasoning Agent recommended keep_model. The current Split Miner model will be retained.",
+    "parameters": {},
+    "attempted": [],
+    "iteration": 1,
+    "quality_check": {
+      "quality_ok": true,
+      "violations": [],
+      "metrics": {
+        "fitness": 0.9692307692307692,
+        "precision": 0.973404255319149,
+        "generalization": 0.7438570515055211,
+        "simplicity": 1.0
+      },
+      "policy": {
+        "fitness_min": 0.8,
+        "precision_min": 0.5,
+        "generalization_min": 0.7,
+        "simplicity_min": 0.4
+      }
+    },
+    "policy_triggered": false,
+    "reasoning_action": "keep_model"
+  },
+  "final_action": "keep_model",
+  "loop_terminated": true,
+  "process_intelligence": {
+    "status": "SUCCESS",
+    "bottleneck_analysis": {
+      "activity_analysis": [
+        {
+          "activity": "Review Request",
+          "frequency": 39,
+          "percentage": 23.35,
+          "case_count": 28,
+          "average_duration_hours": 0.96,
+          "median_duration_hours": 1.0,
+          "maximum_duration_hours": 1.0,
+          "repetition_count": 11
+        },
+        {
+          "activity": "Approve Request",
+          "frequency": 34,
+          "percentage": 20.36,
+          "case_count": 28,
+          "average_duration_hours": 0.92,
+          "median_duration_hours": 0.92,
+          "maximum_duration_hours": 0.92,
+          "repetition_count": 6
+        },
+        {
+          "activity": "Create Request",
+          "frequency": 28,
+          "percentage": 16.77,
+          "case_count": 28,
+          "average_duration_hours": 0.0,
+          "median_duration_hours": 0.0,
+          "maximum_duration_hours": 0.0,
+          "repetition_count": 0
+        },
+        {
+          "activity": "Process Request",
+          "frequency": 28,
+          "percentage": 16.77,
+          "case_count": 28,
+          "average_duration_hours": 0.0,
+          "median_duration_hours": 0.0,
+          "maximum_duration_hours": 0.0,
+          "repetition_count": 0
+        },
+        {
+          "activity": "Complete Request",
+          "frequency": 28,
+          "percentage": 16.77,
+          "case_count": 28,
+          "average_duration_hours": 0.0,
+          "median_duration_hours": 0.0,
+          "maximum_duration_hours": 0.0,
+          "repetition_count": 0
+        },
+        {
+          "activity": "Reject Request",
+          "frequency": 5,
+          "percentage": 2.99,
+          "case_count": 5,
+          "average_duration_hours": 0.0,
+          "median_duration_hours": 0.0,
+          "maximum_duration_hours": 0.0,
+          "repetition_count": 0
+        },
+        {
+          "activity": "Correct Request",
+          "frequency": 5,
+          "percentage": 2.99,
+          "case_count": 5,
+          "average_duration_hours": 0.0,
+          "median_duration_hours": 0.0,
+          "maximum_duration_hours": 0.0,
+          "repetition_count": 0
+        }
+      ],
+      "transition_analysis": [
+        {
+          "from_activity": "Process Request",
+          "to_activity": "Complete Request",
+          "occurrences": 22,
+          "average_waiting_hours": 1.07,
+          "median_waiting_hours": 0.5,
+          "p75_waiting_hours": 0.5,
+          "maximum_waiting_hours": 3.0
+        },
+        {
+          "from_activity": "Review Request",
+          "to_activity": "Approve Request",
+          "occurrences": 34,
+          "average_waiting_hours": 0.86,
+          "median_waiting_hours": 0.33,
+          "p75_waiting_hours": 0.33,
+          "maximum_waiting_hours": 4.0
+        },
+        {
+          "from_activity": "Process Request",
+          "to_activity": "Review Request",
+          "occurrences": 6,
+          "average_waiting_hours": 0.5,
+          "median_waiting_hours": 0.5,
+          "p75_waiting_hours": 0.5,
+          "maximum_waiting_hours": 0.5
+        },
+        {
+          "from_activity": "Correct Request",
+          "to_activity": "Review Request",
+          "occurrences": 5,
+          "average_waiting_hours": 0.42,
+          "median_waiting_hours": 0.42,
+          "p75_waiting_hours": 0.42,
+          "maximum_waiting_hours": 0.42
+        },
+        {
+          "from_activity": "Review Request",
+          "to_activity": "Reject Request",
+          "occurrences": 5,
+          "average_waiting_hours": 0.33,
+          "median_waiting_hours": 0.33,
+          "p75_waiting_hours": 0.33,
+          "maximum_waiting_hours": 0.33
+        },
+        {
+          "from_activity": "Approve Request",
+          "to_activity": "Process Request",
+          "occurrences": 28,
+          "average_waiting_hours": 0.17,
+          "median_waiting_hours": 0.17,
+          "p75_waiting_hours": 0.17,
+          "maximum_waiting_hours": 0.17
+        },
+        {
+          "from_activity": "Approve Request",
+          "to_activity": "Complete Request",
+          "occurrences": 6,
+          "average_waiting_hours": 0.17,
+          "median_waiting_hours": 0.17,
+          "p75_waiting_hours": 0.17,
+          "maximum_waiting_hours": 0.17
+        },
+        {
+          "from_activity": "Reject Request",
+          "to_activity": "Correct Request",
+          "occurrences": 5,
+          "average_waiting_hours": 0.17,
+          "median_waiting_hours": 0.17,
+          "p75_waiting_hours": 0.17,
+          "maximum_waiting_hours": 0.17
+        },
+        {
+          "from_activity": "Create Request",
+          "to_activity": "Review Request",
+          "occurrences": 28,
+          "average_waiting_hours": 0.08,
+          "median_waiting_hours": 0.08,
+          "p75_waiting_hours": 0.08,
+          "maximum_waiting_hours": 0.08
+        }
+      ],
+      "case_analysis": {
+        "number_of_cases": 28,
+        "average_case_duration_hours": 2.44,
+        "median_case_duration_hours": 1.5,
+        "p75_case_duration_hours": 2.0,
+        "p95_case_duration_hours": 7.25,
+        "maximum_case_duration_hours": 7.25,
+        "average_events_per_case": 5.96,
+        "longest_cases": [
+          {
+            "case_id": "CASE_024",
+            "duration_hours": 7.25,
+            "event_count": 5,
+            "unique_activities": 5
+          },
+          {
+            "case_id": "CASE_025",
+            "duration_hours": 7.25,
+            "event_count": 5,
+            "unique_activities": 5
+          },
+          {
+            "case_id": "CASE_026",
+            "duration_hours": 7.25,
+            "event_count": 5,
+            "unique_activities": 5
+          },
+          {
+            "case_id": "CASE_027",
+            "duration_hours": 7.25,
+            "event_count": 5,
+            "unique_activities": 5
+          },
+          {
+            "case_id": "CASE_028",
+            "duration_hours": 7.25,
+            "event_count": 5,
+            "unique_activities": 5
+          },
+          {
+            "case_id": "CASE_019",
+            "duration_hours": 2.0,
+            "event_count": 8,
+            "unique_activities": 7
+          },
+          {
+            "case_id": "CASE_020",
+            "duration_hours": 2.0,
+            "event_count": 8,
+            "unique_activities": 7
+          },
+          {
+            "case_id": "CASE_021",
+            "duration_hours": 2.0,
+            "event_count": 8,
+            "unique_activities": 7
+          },
+          {
+            "case_id": "CASE_022",
+            "duration_hours": 2.0,
+            "event_count": 8,
+            "unique_activities": 7
+          },
+          {
+            "case_id": "CASE_023",
+            "duration_hours": 2.0,
+            "event_count": 8,
+            "unique_activities": 7
+          }
+        ]
+      },
+      "rework_analysis": [
+        {
+          "activity": "Review Request",
+          "cases_containing_activity": 28,
+          "repetition_count": 11
+        },
+        {
+          "activity": "Approve Request",
+          "cases_containing_activity": 28,
+          "repetition_count": 6
+        }
+      ],
+      "bottlenecks": [
+        {
+          "activity": "Approve Request",
+          "bottleneck_score": 0.75,
+          "indicators": 3,
+          "average_waiting_hours": 0.86,
+          "average_duration_hours": 0.92,
+          "frequency": 34,
+          "repetition_count": 6,
+          "reasons": [
+            "high waiting time",
+            "high activity frequency",
+            "repeated activity / rework"
+          ]
+        },
+        {
+          "activity": "Review Request",
+          "bottleneck_score": 0.75,
+          "indicators": 3,
+          "average_waiting_hours": 0.33,
+          "average_duration_hours": 0.96,
+          "frequency": 39,
+          "repetition_count": 11,
+          "reasons": [
+            "high activity frequency",
+            "high average duration",
+            "repeated activity / rework"
+          ]
+        }
+      ],
+      "deviations": [
+        {
+          "variant": "Create Request -> Review Request -> Reject Request -> Correct Request -> Review Request -> Approve Request -> Process Request -> Complete Request",
+          "case_count": 5,
+          "percentage": 17.86,
+          "sequence_length": 8,
+          "difference_from_dominant": 6,
+          "deviation_ratio": 0.75,
+          "dominant_variant_percentage": 60.71
+        }
+      ],
+      "summary": {
+        "events": 167,
+        "cases": 28,
+        "activities": 7,
+        "transitions": 9,
+        "potential_bottlenecks": 2,
+        "potential_deviations": 1,
+        "activities_with_rework": 2,
+        "longest_case_duration_hours": 7.25
+      }
+    },
+    "optimization": {
+      "status": "SUCCESS",
+      "recommendations": [
+        {
+          "recommendation_id": "BOT-001",
+          "category": "Bottleneck Reduction",
+          "priority": "HIGH",
+          "affected_activity": "Approve Request",
+          "problem": "Approve Request is identified as a potential process bottleneck.",
+          "evidence": [
+            "Bottleneck score: 0.75",
+            "The activity was identified by bottleneck analysis."
+          ],
+          "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+          "recommendation": "Investigate the waiting and processing time associated with 'Approve Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+          "score": 0.75
+        },
+        {
+          "recommendation_id": "BOT-002",
+          "category": "Bottleneck Reduction",
+          "priority": "HIGH",
+          "affected_activity": "Review Request",
+          "problem": "Review Request is identified as a potential process bottleneck.",
+          "evidence": [
+            "Bottleneck score: 0.75",
+            "The activity was identified by bottleneck analysis."
+          ],
+          "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+          "recommendation": "Investigate the waiting and processing time associated with 'Review Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+          "score": 0.75
+        },
+        {
+          "recommendation_id": "DEV-003",
+          "category": "Deviation Correction",
+          "priority": "LOW",
+          "affected_activity": "Process Variant",
+          "problem": "A process variant differs substantially from the dominant observed variant.",
+          "evidence": [
+            "Deviation score: 0.00",
+            "Cases affected: 5"
+          ],
+          "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+          "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+          "score": 0.0,
+          "affected_cases": 5
+        },
+        {
+          "recommendation_id": "TRN-004",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Process Request -> Complete Request",
+          "problem": "The transition from 'Process Request' to 'Complete Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 22",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Process Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 22
+        },
+        {
+          "recommendation_id": "TRN-005",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Review Request -> Approve Request",
+          "problem": "The transition from 'Review Request' to 'Approve Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 34",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Review Request' to 'Approve Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 34
+        },
+        {
+          "recommendation_id": "TRN-006",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Process Request -> Review Request",
+          "problem": "The transition from 'Process Request' to 'Review Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 6",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Process Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 6
+        },
+        {
+          "recommendation_id": "TRN-007",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Correct Request -> Review Request",
+          "problem": "The transition from 'Correct Request' to 'Review Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 5",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Correct Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 5
+        },
+        {
+          "recommendation_id": "TRN-008",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Review Request -> Reject Request",
+          "problem": "The transition from 'Review Request' to 'Reject Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 5",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Review Request' to 'Reject Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 5
+        },
+        {
+          "recommendation_id": "TRN-009",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Approve Request -> Process Request",
+          "problem": "The transition from 'Approve Request' to 'Process Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 28",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Approve Request' to 'Process Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 28
+        },
+        {
+          "recommendation_id": "TRN-010",
+          "category": "Flow Optimization",
+          "priority": "LOW",
+          "affected_activity": "Approve Request -> Complete Request",
+          "problem": "The transition from 'Approve Request' to 'Complete Request' requires investigation.",
+          "evidence": [
+            "Transition frequency: 6",
+            "Transition score: 0.00"
+          ],
+          "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+          "recommendation": "Review the transition from 'Approve Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+          "score": 0.0,
+          "frequency": 6
+        }
+      ],
+      "recommendation_count": 10,
+      "high_priority": 2,
+      "medium_priority": 0,
+      "low_priority": 8,
+      "input_summary": {
+        "events": 0,
+        "cases": 0,
+        "activities": 0,
+        "transitions": 0,
+        "potential_bottlenecks": 2,
+        "potential_deviations": 1,
+        "activities_with_rework": 0
+      },
+      "method": "deterministic_rule_based",
+      "agent": "OptimizationAgent"
+    }
+  },
+  "bottleneck_analysis": {
+    "activity_analysis": [
+      {
+        "activity": "Review Request",
+        "frequency": 39,
+        "percentage": 23.35,
+        "case_count": 28,
+        "average_duration_hours": 0.96,
+        "median_duration_hours": 1.0,
+        "maximum_duration_hours": 1.0,
+        "repetition_count": 11
+      },
+      {
+        "activity": "Approve Request",
+        "frequency": 34,
+        "percentage": 20.36,
+        "case_count": 28,
+        "average_duration_hours": 0.92,
+        "median_duration_hours": 0.92,
+        "maximum_duration_hours": 0.92,
+        "repetition_count": 6
+      },
+      {
+        "activity": "Create Request",
+        "frequency": 28,
+        "percentage": 16.77,
+        "case_count": 28,
+        "average_duration_hours": 0.0,
+        "median_duration_hours": 0.0,
+        "maximum_duration_hours": 0.0,
+        "repetition_count": 0
+      },
+      {
+        "activity": "Process Request",
+        "frequency": 28,
+        "percentage": 16.77,
+        "case_count": 28,
+        "average_duration_hours": 0.0,
+        "median_duration_hours": 0.0,
+        "maximum_duration_hours": 0.0,
+        "repetition_count": 0
+      },
+      {
+        "activity": "Complete Request",
+        "frequency": 28,
+        "percentage": 16.77,
+        "case_count": 28,
+        "average_duration_hours": 0.0,
+        "median_duration_hours": 0.0,
+        "maximum_duration_hours": 0.0,
+        "repetition_count": 0
+      },
+      {
+        "activity": "Reject Request",
+        "frequency": 5,
+        "percentage": 2.99,
+        "case_count": 5,
+        "average_duration_hours": 0.0,
+        "median_duration_hours": 0.0,
+        "maximum_duration_hours": 0.0,
+        "repetition_count": 0
+      },
+      {
+        "activity": "Correct Request",
+        "frequency": 5,
+        "percentage": 2.99,
+        "case_count": 5,
+        "average_duration_hours": 0.0,
+        "median_duration_hours": 0.0,
+        "maximum_duration_hours": 0.0,
+        "repetition_count": 0
+      }
+    ],
+    "transition_analysis": [
+      {
+        "from_activity": "Process Request",
+        "to_activity": "Complete Request",
+        "occurrences": 22,
+        "average_waiting_hours": 1.07,
+        "median_waiting_hours": 0.5,
+        "p75_waiting_hours": 0.5,
+        "maximum_waiting_hours": 3.0
+      },
+      {
+        "from_activity": "Review Request",
+        "to_activity": "Approve Request",
+        "occurrences": 34,
+        "average_waiting_hours": 0.86,
+        "median_waiting_hours": 0.33,
+        "p75_waiting_hours": 0.33,
+        "maximum_waiting_hours": 4.0
+      },
+      {
+        "from_activity": "Process Request",
+        "to_activity": "Review Request",
+        "occurrences": 6,
+        "average_waiting_hours": 0.5,
+        "median_waiting_hours": 0.5,
+        "p75_waiting_hours": 0.5,
+        "maximum_waiting_hours": 0.5
+      },
+      {
+        "from_activity": "Correct Request",
+        "to_activity": "Review Request",
+        "occurrences": 5,
+        "average_waiting_hours": 0.42,
+        "median_waiting_hours": 0.42,
+        "p75_waiting_hours": 0.42,
+        "maximum_waiting_hours": 0.42
+      },
+      {
+        "from_activity": "Review Request",
+        "to_activity": "Reject Request",
+        "occurrences": 5,
+        "average_waiting_hours": 0.33,
+        "median_waiting_hours": 0.33,
+        "p75_waiting_hours": 0.33,
+        "maximum_waiting_hours": 0.33
+      },
+      {
+        "from_activity": "Approve Request",
+        "to_activity": "Process Request",
+        "occurrences": 28,
+        "average_waiting_hours": 0.17,
+        "median_waiting_hours": 0.17,
+        "p75_waiting_hours": 0.17,
+        "maximum_waiting_hours": 0.17
+      },
+      {
+        "from_activity": "Approve Request",
+        "to_activity": "Complete Request",
+        "occurrences": 6,
+        "average_waiting_hours": 0.17,
+        "median_waiting_hours": 0.17,
+        "p75_waiting_hours": 0.17,
+        "maximum_waiting_hours": 0.17
+      },
+      {
+        "from_activity": "Reject Request",
+        "to_activity": "Correct Request",
+        "occurrences": 5,
+        "average_waiting_hours": 0.17,
+        "median_waiting_hours": 0.17,
+        "p75_waiting_hours": 0.17,
+        "maximum_waiting_hours": 0.17
+      },
+      {
+        "from_activity": "Create Request",
+        "to_activity": "Review Request",
+        "occurrences": 28,
+        "average_waiting_hours": 0.08,
+        "median_waiting_hours": 0.08,
+        "p75_waiting_hours": 0.08,
+        "maximum_waiting_hours": 0.08
+      }
+    ],
+    "case_analysis": {
+      "number_of_cases": 28,
+      "average_case_duration_hours": 2.44,
+      "median_case_duration_hours": 1.5,
+      "p75_case_duration_hours": 2.0,
+      "p95_case_duration_hours": 7.25,
+      "maximum_case_duration_hours": 7.25,
+      "average_events_per_case": 5.96,
+      "longest_cases": [
+        {
+          "case_id": "CASE_024",
+          "duration_hours": 7.25,
+          "event_count": 5,
+          "unique_activities": 5
+        },
+        {
+          "case_id": "CASE_025",
+          "duration_hours": 7.25,
+          "event_count": 5,
+          "unique_activities": 5
+        },
+        {
+          "case_id": "CASE_026",
+          "duration_hours": 7.25,
+          "event_count": 5,
+          "unique_activities": 5
+        },
+        {
+          "case_id": "CASE_027",
+          "duration_hours": 7.25,
+          "event_count": 5,
+          "unique_activities": 5
+        },
+        {
+          "case_id": "CASE_028",
+          "duration_hours": 7.25,
+          "event_count": 5,
+          "unique_activities": 5
+        },
+        {
+          "case_id": "CASE_019",
+          "duration_hours": 2.0,
+          "event_count": 8,
+          "unique_activities": 7
+        },
+        {
+          "case_id": "CASE_020",
+          "duration_hours": 2.0,
+          "event_count": 8,
+          "unique_activities": 7
+        },
+        {
+          "case_id": "CASE_021",
+          "duration_hours": 2.0,
+          "event_count": 8,
+          "unique_activities": 7
+        },
+        {
+          "case_id": "CASE_022",
+          "duration_hours": 2.0,
+          "event_count": 8,
+          "unique_activities": 7
+        },
+        {
+          "case_id": "CASE_023",
+          "duration_hours": 2.0,
+          "event_count": 8,
+          "unique_activities": 7
+        }
+      ]
+    },
+    "rework_analysis": [
+      {
+        "activity": "Review Request",
+        "cases_containing_activity": 28,
+        "repetition_count": 11
+      },
+      {
+        "activity": "Approve Request",
+        "cases_containing_activity": 28,
+        "repetition_count": 6
+      }
+    ],
+    "bottlenecks": [
+      {
+        "activity": "Approve Request",
+        "bottleneck_score": 0.75,
+        "indicators": 3,
+        "average_waiting_hours": 0.86,
+        "average_duration_hours": 0.92,
+        "frequency": 34,
+        "repetition_count": 6,
+        "reasons": [
+          "high waiting time",
+          "high activity frequency",
+          "repeated activity / rework"
+        ]
+      },
+      {
+        "activity": "Review Request",
+        "bottleneck_score": 0.75,
+        "indicators": 3,
+        "average_waiting_hours": 0.33,
+        "average_duration_hours": 0.96,
+        "frequency": 39,
+        "repetition_count": 11,
+        "reasons": [
+          "high activity frequency",
+          "high average duration",
+          "repeated activity / rework"
+        ]
+      }
+    ],
+    "deviations": [
+      {
+        "variant": "Create Request -> Review Request -> Reject Request -> Correct Request -> Review Request -> Approve Request -> Process Request -> Complete Request",
+        "case_count": 5,
+        "percentage": 17.86,
+        "sequence_length": 8,
+        "difference_from_dominant": 6,
+        "deviation_ratio": 0.75,
+        "dominant_variant_percentage": 60.71
+      }
+    ],
+    "summary": {
+      "events": 167,
+      "cases": 28,
+      "activities": 7,
+      "transitions": 9,
+      "potential_bottlenecks": 2,
+      "potential_deviations": 1,
+      "activities_with_rework": 2,
+      "longest_case_duration_hours": 7.25
+    }
+  },
+  "optimization": {
+    "status": "SUCCESS",
+    "recommendations": [
+      {
+        "recommendation_id": "BOT-001",
+        "category": "Bottleneck Reduction",
+        "priority": "HIGH",
+        "affected_activity": "Approve Request",
+        "problem": "Approve Request is identified as a potential process bottleneck.",
+        "evidence": [
+          "Bottleneck score: 0.75",
+          "The activity was identified by bottleneck analysis."
+        ],
+        "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+        "recommendation": "Investigate the waiting and processing time associated with 'Approve Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+        "score": 0.75
+      },
+      {
+        "recommendation_id": "BOT-002",
+        "category": "Bottleneck Reduction",
+        "priority": "HIGH",
+        "affected_activity": "Review Request",
+        "problem": "Review Request is identified as a potential process bottleneck.",
+        "evidence": [
+          "Bottleneck score: 0.75",
+          "The activity was identified by bottleneck analysis."
+        ],
+        "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+        "recommendation": "Investigate the waiting and processing time associated with 'Review Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+        "score": 0.75
+      },
+      {
+        "recommendation_id": "DEV-003",
+        "category": "Deviation Correction",
+        "priority": "LOW",
+        "affected_activity": "Process Variant",
+        "problem": "A process variant differs substantially from the dominant observed variant.",
+        "evidence": [
+          "Deviation score: 0.00",
+          "Cases affected: 5"
+        ],
+        "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+        "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+        "score": 0.0,
+        "affected_cases": 5
+      },
+      {
+        "recommendation_id": "TRN-004",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Process Request -> Complete Request",
+        "problem": "The transition from 'Process Request' to 'Complete Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 22",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Process Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 22
+      },
+      {
+        "recommendation_id": "TRN-005",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Review Request -> Approve Request",
+        "problem": "The transition from 'Review Request' to 'Approve Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 34",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Review Request' to 'Approve Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 34
+      },
+      {
+        "recommendation_id": "TRN-006",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Process Request -> Review Request",
+        "problem": "The transition from 'Process Request' to 'Review Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 6",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Process Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 6
+      },
+      {
+        "recommendation_id": "TRN-007",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Correct Request -> Review Request",
+        "problem": "The transition from 'Correct Request' to 'Review Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 5",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Correct Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 5
+      },
+      {
+        "recommendation_id": "TRN-008",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Review Request -> Reject Request",
+        "problem": "The transition from 'Review Request' to 'Reject Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 5",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Review Request' to 'Reject Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 5
+      },
+      {
+        "recommendation_id": "TRN-009",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Approve Request -> Process Request",
+        "problem": "The transition from 'Approve Request' to 'Process Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 28",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Approve Request' to 'Process Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 28
+      },
+      {
+        "recommendation_id": "TRN-010",
+        "category": "Flow Optimization",
+        "priority": "LOW",
+        "affected_activity": "Approve Request -> Complete Request",
+        "problem": "The transition from 'Approve Request' to 'Complete Request' requires investigation.",
+        "evidence": [
+          "Transition frequency: 6",
+          "Transition score: 0.00"
+        ],
+        "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+        "recommendation": "Review the transition from 'Approve Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+        "score": 0.0,
+        "frequency": 6
+      }
+    ],
+    "recommendation_count": 10,
+    "high_priority": 2,
+    "medium_priority": 0,
+    "low_priority": 8,
+    "input_summary": {
+      "events": 0,
+      "cases": 0,
+      "activities": 0,
+      "transitions": 0,
+      "potential_bottlenecks": 2,
+      "potential_deviations": 1,
+      "activities_with_rework": 0
+    },
+    "method": "deterministic_rule_based",
+    "agent": "OptimizationAgent"
+  }
+}

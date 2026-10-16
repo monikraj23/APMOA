@@ -1,0 +1,15 @@
+APMOA Autonomous Adaptation Rules
+
+If precision is below its minimum threshold, use a precision-oriented rediscovery strategy.
+If fitness is below its minimum threshold, use a fitness-oriented rediscovery strategy.
+If generalization is below its minimum threshold, use a balanced or generalization-oriented strategy.
+If simplicity is below its minimum threshold, consider a simplicity-oriented strategy.
+
+Available discovery algorithms:
+Inductive Miner
+Alpha Miner
+Alpha+ Miner
+Heuristics Miner
+Split Miner
+
+A safe default is KEEP when quality thresholds pass and no explicit rediscovery request is produced.

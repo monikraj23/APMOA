@@ -1,0 +1,11 @@
+Process Model Evaluation Metrics
+
+Fitness measures how well the discovered process model can reproduce the behavior observed in the event log.
+
+Precision measures how much unnecessary behavior the discovered model allows beyond the observed behavior.
+
+Generalization measures how well the model can represent behavior that was not directly observed in the available sample.
+
+Simplicity measures the structural complexity of the discovered process model.
+
+A balanced process model should consider fitness, precision, generalization, and simplicity rather than optimizing a single metric.

@@ -1,0 +1,166 @@
+{
+  "status": "SUCCESS",
+  "recommendations": [
+    {
+      "recommendation_id": "BOT-001",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Send Reminder",
+      "problem": "Send Reminder is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 1.00",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Send Reminder'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 1.0
+    },
+    {
+      "recommendation_id": "BOT-002",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Permit APPROVED by PRE_APPROVER",
+      "problem": "Permit APPROVED by PRE_APPROVER is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 0.75",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Permit APPROVED by PRE_APPROVER'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 0.75
+    },
+    {
+      "recommendation_id": "BOT-003",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Permit REJECTED by MISSING",
+      "problem": "Permit REJECTED by MISSING is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 0.75",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Permit REJECTED by MISSING'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 0.75
+    },
+    {
+      "recommendation_id": "BOT-004",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Permit APPROVED by ADMINISTRATION",
+      "problem": "Permit APPROVED by ADMINISTRATION is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 0.75",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Permit APPROVED by ADMINISTRATION'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 0.75
+    },
+    {
+      "recommendation_id": "DEV-005",
+      "category": "Deviation Correction",
+      "priority": "LOW",
+      "affected_activity": "Process Variant",
+      "problem": "A process variant differs substantially from the dominant observed variant.",
+      "evidence": [
+        "Deviation score: 0.00",
+        "Cases affected: 60"
+      ],
+      "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+      "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+      "score": 0.0,
+      "affected_cases": 60
+    },
+    {
+      "recommendation_id": "TRN-006",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Permit SAVED by EMPLOYEE -> End trip",
+      "problem": "The transition from 'Permit SAVED by EMPLOYEE' to 'End trip' requires investigation.",
+      "evidence": [
+        "Transition frequency: 1",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Permit SAVED by EMPLOYEE' to 'End trip'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 1
+    },
+    {
+      "recommendation_id": "DEV-007",
+      "category": "Deviation Correction",
+      "priority": "LOW",
+      "affected_activity": "Process Variant",
+      "problem": "A process variant differs substantially from the dominant observed variant.",
+      "evidence": [
+        "Deviation score: 0.00",
+        "Cases affected: 34"
+      ],
+      "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+      "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+      "score": 0.0,
+      "affected_cases": 34
+    },
+    {
+      "recommendation_id": "TRN-008",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Permit REJECTED by MISSING -> Send Reminder",
+      "problem": "The transition from 'Permit REJECTED by MISSING' to 'Send Reminder' requires investigation.",
+      "evidence": [
+        "Transition frequency: 1",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Permit REJECTED by MISSING' to 'Send Reminder'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 1
+    },
+    {
+      "recommendation_id": "DEV-009",
+      "category": "Deviation Correction",
+      "priority": "LOW",
+      "affected_activity": "Process Variant",
+      "problem": "A process variant differs substantially from the dominant observed variant.",
+      "evidence": [
+        "Deviation score: 0.00",
+        "Cases affected: 21"
+      ],
+      "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+      "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+      "score": 0.0,
+      "affected_cases": 21
+    },
+    {
+      "recommendation_id": "TRN-010",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Declaration SAVED by EMPLOYEE -> End trip",
+      "problem": "The transition from 'Declaration SAVED by EMPLOYEE' to 'End trip' requires investigation.",
+      "evidence": [
+        "Transition frequency: 2",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Declaration SAVED by EMPLOYEE' to 'End trip'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 2
+    }
+  ],
+  "recommendation_count": 10,
+  "high_priority": 4,
+  "medium_priority": 0,
+  "low_priority": 6,
+  "input_summary": {
+    "events": 0,
+    "cases": 0,
+    "activities": 0,
+    "transitions": 0,
+    "potential_bottlenecks": 23,
+    "potential_deviations": 50,
+    "activities_with_rework": 0
+  },
+  "method": "deterministic_rule_based",
+  "agent": "OptimizationAgent"
+}

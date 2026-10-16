@@ -1,0 +1,9 @@
+{
+  "experiment_id": "EXP-20260921-164730",
+  "created_at": "2026-09-21T16:47:30.499219",
+  "updated_at": "2026-09-21T16:47:30.501192",
+  "dataset_name": "Mock Event Log",
+  "dataset_path": "data/datasets/uploaded/mock_event_log/mock_event_log.csv",
+  "description": "ExperimentManager integration test",
+  "status": "completed"
+}

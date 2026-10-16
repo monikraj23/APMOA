@@ -1,0 +1,15 @@
+Process Mining
+
+Process mining analyzes event logs to discover, monitor, and improve business processes.
+
+An event log generally contains a case identifier, activity name, and timestamp.
+
+A case represents one execution of a process.
+
+An event represents an occurrence within a case.
+
+An activity represents the operation performed in the process.
+
+Process discovery derives a process model from an event log.
+
+Common process discovery algorithms include Alpha Miner, Alpha+ Miner, Heuristics Miner, Inductive Miner, and Split Miner.

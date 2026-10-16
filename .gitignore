@@ -1,0 +1,72 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# macOS and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.backup
+*_old.*
+*_backup.*
+.ipynb_checkpoints/
+
+# Raw datasets and compressed data
+*.xes
+*.xes.gz
+*.xes.zip
+*.csv.gz
+*.parquet
+*.pkl
+*.pickle
+
+# Model and vector index files
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.faiss
+*.index
+
+# Build output and local databases
+build/
+dist/
+*.egg-info/
+*.sqlite
+*.sqlite3
+*.db
+
+# Source archive — keep the project source, not the ZIP
+APMOA_source_code.zip
+*.zip
+
+# Temporary patch scripts and backup dashboards
+patch_*.py
+dashboard_backup*.py
+src/**/*_backup.py
+src/**/*_old.py
+
+# Uploaded datasets
+data/datasets/uploaded/

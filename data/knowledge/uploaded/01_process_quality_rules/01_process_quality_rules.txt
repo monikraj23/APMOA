@@ -1,0 +1,15 @@
+APMOA Process Quality Rules
+
+Fitness measures how well a discovered process model reproduces observed behavior.
+Precision measures unnecessary behavior permitted by the model.
+Generalization measures the ability to represent valid behavior not directly observed.
+Simplicity measures structural complexity.
+
+Prototype quality thresholds:
+fitness minimum = 0.80
+precision minimum = 0.50
+generalization minimum = 0.70
+simplicity minimum = 0.40
+
+Any quality violation should trigger the autonomous rediscovery policy.
+If quality passes, the model may be retained unless the reasoning layer explicitly requests rediscovery.

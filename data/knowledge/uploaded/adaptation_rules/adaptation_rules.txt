@@ -1,0 +1,11 @@
+Adaptive Process Discovery
+
+An autonomous process-mining system can evaluate a discovered model and determine whether the current model should be retained or another discovery strategy should be attempted.
+
+Rediscovery can be considered when the selected model does not satisfy the configured quality requirements.
+
+A rediscovery iteration uses the same underlying event log but can change the process discovery strategy or algorithm.
+
+The adaptation decision should be based on process-model evaluation results and the configured adaptation policy.
+
+The purpose of adaptation is to improve the discovered process representation without changing the underlying event log.

@@ -1,0 +1,67 @@
+[
+  {
+    "model": "Inductive Miner",
+    "model_type": "PETRI_NET",
+    "fitness": 1.0,
+    "precision": 0.09803716530008422,
+    "generalization": 0.8616797985629043,
+    "simplicity": 0.5946547884187082,
+    "places": 100,
+    "transitions": 167,
+    "arcs": 358,
+    "evaluation_time": 210.53060507774353,
+    "status": "SUCCESS"
+  },
+  {
+    "model": "Alpha Miner",
+    "model_type": "PETRI_NET",
+    "fitness": 0.41989689325938545,
+    "precision": 0.0,
+    "generalization": 0.8552671808747483,
+    "simplicity": 0.41904761904761906,
+    "places": 37,
+    "transitions": 51,
+    "arcs": 149,
+    "evaluation_time": 18.53200602531433,
+    "status": "SUCCESS"
+  },
+  {
+    "model": "Alpha+ Miner",
+    "model_type": "PETRI_NET",
+    "fitness": 0.5712427645468122,
+    "precision": 0.09637132624826539,
+    "generalization": 0.8595029161987031,
+    "simplicity": 0.26541554959785524,
+    "places": 46,
+    "transitions": 53,
+    "arcs": 236,
+    "evaluation_time": 32.03085732460022,
+    "status": "SUCCESS"
+  },
+  {
+    "model": "Heuristics Miner",
+    "model_type": "PETRI_NET",
+    "fitness": 0.8888104078985233,
+    "precision": 0.8137442437123628,
+    "generalization": 0.6009017104313221,
+    "simplicity": 0.4759036144578313,
+    "places": 106,
+    "transitions": 210,
+    "arcs": 490,
+    "evaluation_time": 36.42959523200989,
+    "status": "SUCCESS"
+  },
+  {
+    "model": "Split Miner",
+    "model_type": "BPMN",
+    "fitness": 0.9742005515865352,
+    "precision": 0.6386556804571495,
+    "generalization": 0.8564319555177802,
+    "simplicity": 0.5642458100558659,
+    "places": 63,
+    "transitions": 139,
+    "arcs": 280,
+    "evaluation_time": 35.824787855148315,
+    "status": "SUCCESS"
+  }
+]

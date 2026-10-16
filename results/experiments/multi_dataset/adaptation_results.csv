@@ -1,0 +1,3 @@
+dataset,adaptation_action,adaptation_strategy,adaptation_target,adaptation_current_model,adaptation_next_algorithm,adaptation_reason,adaptation_policy_triggered
+BPI 2020 Travel Permit,keep_model,none,current_model,Split Miner,,All configured quality requirements are satisfied. Reasoning Agent recommended keep_model. The current Split Miner model will be retained.,False
+BPI 2012,keep_model,none,current_model,Split Miner,,All configured quality requirements are satisfied. Reasoning Agent recommended keep_model. The current Split Miner model will be retained.,False

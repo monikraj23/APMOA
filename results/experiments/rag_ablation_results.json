@@ -1,0 +1,135 @@
+{
+    "experiment": "APMOA RAG Ablation",
+    "timestamp": "2026-09-20T20:17:06.564371",
+    "description": "Comparison of Reasoning Agent behavior with and without RAG using identical process-mining evidence.",
+    "selected_model": "Split Miner",
+    "process_diagnostics": {
+        "dataset": "BPI Challenge 2020 - Travel Permit",
+        "events": 86581,
+        "cases": 7065,
+        "activities": 51,
+        "resources": 2,
+        "process_intelligence": {
+            "potential_bottlenecks": 23,
+            "potential_deviations": 50,
+            "activities_with_rework": 41,
+            "transitions_analyzed": 553
+        },
+        "selection_weights": {
+            "fitness": 0.3,
+            "precision": 0.3,
+            "generalization": 0.2,
+            "simplicity": 0.2
+        },
+        "quality_thresholds": {
+            "fitness_min": 0.8,
+            "precision_min": 0.5,
+            "generalization_min": 0.7,
+            "simplicity_min": 0.4
+        }
+    },
+    "model_evaluations": [
+        {
+            "model": "Inductive Miner",
+            "fitness": 1.0,
+            "precision": 0.098,
+            "generalization": 0.8617,
+            "simplicity": 0.5947,
+            "selection_score": 0.620678,
+            "rank": 3,
+            "status": "SUCCESS"
+        },
+        {
+            "model": "Alpha Miner",
+            "fitness": 0.4199,
+            "precision": 0.0,
+            "generalization": 0.8553,
+            "simplicity": 0.419,
+            "selection_score": 0.380832,
+            "rank": 5,
+            "status": "SUCCESS"
+        },
+        {
+            "model": "Alpha+ Miner",
+            "fitness": 0.5862,
+            "precision": 0.0964,
+            "generalization": 0.8595,
+            "simplicity": 0.2646,
+            "selection_score": 0.429574,
+            "rank": 4,
+            "status": "SUCCESS"
+        },
+        {
+            "model": "Heuristics Miner",
+            "fitness": 0.8864,
+            "precision": 0.8137,
+            "generalization": 0.5986,
+            "simplicity": 0.4759,
+            "selection_score": 0.724941,
+            "rank": 2,
+            "status": "SUCCESS"
+        },
+        {
+            "model": "Split Miner",
+            "fitness": 0.9742,
+            "precision": 0.6387,
+            "generalization": 0.8564,
+            "simplicity": 0.5642,
+            "selection_score": 0.767992,
+            "rank": 1,
+            "status": "SUCCESS"
+        }
+    ],
+    "rag_enabled": {
+        "configuration": "RAG_ENABLED",
+        "rag_enabled": true,
+        "elapsed_seconds": 2.5942,
+        "result": {
+            "observation": "Split Miner has the highest selection score (0.767992) and rank 1.0, with very high fitness (0.9742) and generalization (0.8564). Its precision (0.6387) is moderate, lower than Heuristics Miner but far higher than Inductive Miner.",
+            "diagnosis": "The main quality issue is a moderate precision that allows some unobserved behavior; however, the overall trade‑off (fitness, generalization, simplicity, and selection score) is superior to all other models.",
+            "evidence": [
+                "Fitness: Split Miner 0.9742 vs. Inductive 1.0 (perfect) but Inductive precision 0.098 is very low.",
+                "Precision: Split Miner 0.6387 vs. Heuristics 0.8137 (best) but Heuristics fitness 0.8864 and generalization 0.5986 are lower.",
+                "Generalization: Split Miner 0.8564, comparable to Inductive 0.8617 and Alpha+ 0.8595.",
+                "Simplicity: Split Miner 0.5642, close to Inductive 0.5947 and higher than Alpha+ 0.2646.",
+                "Selection score: Split Miner 0.767992 > Heuristics 0.724941 > Inductive 0.620678, indicating the best overall balance."
+            ],
+            "recommended_action": "keep_model",
+            "reasoning": "The selection score aggregates fitness, precision, generalization, and simplicity into a single balanced metric. Split Miner achieves the highest score and rank, indicating it offers the best overall quality among the evaluated models. While its precision is not the highest, it is acceptable given the high fitness and generalization, and the trade‑off is preferable to the extreme over‑generalization of Inductive Miner or the lower fitness of Heuristics Miner. Therefore, the current model should be retained. The retrieved knowledge confirms that a balanced approach is preferable and that selection score is a valid indicator for deciding whether to keep or rediscover.",
+            "confidence": 0.92,
+            "reasoning_source": "llm",
+            "rag_used": true,
+            "rag_sources": [
+                "process_metrics.txt",
+                "adaptation_rules.txt",
+                "process_mining_basics.txt"
+            ]
+        }
+    },
+    "rag_disabled": {
+        "configuration": "RAG_DISABLED",
+        "rag_enabled": false,
+        "elapsed_seconds": 2.1757,
+        "result": {
+            "observation": "The Split Miner model currently selected achieves the highest overall selection score (0.767992) among all evaluated models, with very high fitness (0.9742) and a moderate precision (0.6387).",
+            "diagnosis": "The most significant quality issue across the evaluated models is the very low precision of the Inductive Miner (0.098), indicating over‑generalisation. For the current model, the trade‑off is a moderate precision compared to the best precision model (Heuristics Miner, 0.8137), but the overall balance of fitness, generalisation, simplicity and selection score is superior.",
+            "evidence": [
+                "Split Miner fitness 0.9742, precision 0.6387, generalisation 0.8564, simplicity 0.5642, selection_score 0.767992",
+                "Heuristics Miner precision 0.8137 but lower fitness 0.8864 and generalisation 0.5986",
+                "Inductive Miner fitness 1.0 but precision 0.098, generalisation 0.8617, simplicity 0.5947"
+            ],
+            "recommended_action": "keep_model",
+            "reasoning": "The current Split Miner model offers the best overall trade‑off: it captures almost all observed behaviour (high fitness), allows a reasonable amount of unobserved behaviour (moderate precision), generalises well, and remains relatively simple. No evidence suggests that the model is severely over‑generalised or under‑fitting. Therefore, keeping the current model is the most appropriate action. The retrieved knowledge does not provide additional guidance for this decision.",
+            "confidence": 0.92,
+            "reasoning_source": "llm",
+            "rag_used": false,
+            "rag_sources": []
+        }
+    },
+    "comparison": {
+        "action_same": true,
+        "confidence_difference": 0.0,
+        "rag_sources": 3,
+        "no_rag_sources": 0
+    }
+}

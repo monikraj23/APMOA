@@ -1,0 +1,168 @@
+{
+  "status": "SUCCESS",
+  "recommendations": [
+    {
+      "recommendation_id": "BOT-001",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Approve Request",
+      "problem": "Approve Request is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 0.75",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Approve Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 0.75
+    },
+    {
+      "recommendation_id": "BOT-002",
+      "category": "Bottleneck Reduction",
+      "priority": "HIGH",
+      "affected_activity": "Review Request",
+      "problem": "Review Request is identified as a potential process bottleneck.",
+      "evidence": [
+        "Bottleneck score: 0.75",
+        "The activity was identified by bottleneck analysis."
+      ],
+      "impact": "The bottleneck may contribute to longer process execution time, waiting, or reduced throughput.",
+      "recommendation": "Investigate the waiting and processing time associated with 'Review Request'. Consider workload balancing, resource reassignment, or parallel execution where business rules permit.",
+      "score": 0.75
+    },
+    {
+      "recommendation_id": "DEV-003",
+      "category": "Deviation Correction",
+      "priority": "LOW",
+      "affected_activity": "Process Variant",
+      "problem": "A process variant differs substantially from the dominant observed variant.",
+      "evidence": [
+        "Deviation score: 0.00",
+        "Cases affected: 5"
+      ],
+      "impact": "The deviation may indicate exceptional handling, inconsistent execution, or an opportunity for process standardization.",
+      "recommendation": "Investigate the affected process variant and determine whether it represents a legitimate business exception or an undesirable deviation.",
+      "score": 0.0,
+      "affected_cases": 5
+    },
+    {
+      "recommendation_id": "TRN-004",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Process Request -> Complete Request",
+      "problem": "The transition from 'Process Request' to 'Complete Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 22",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Process Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 22
+    },
+    {
+      "recommendation_id": "TRN-005",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Review Request -> Approve Request",
+      "problem": "The transition from 'Review Request' to 'Approve Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 34",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Review Request' to 'Approve Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 34
+    },
+    {
+      "recommendation_id": "TRN-006",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Process Request -> Review Request",
+      "problem": "The transition from 'Process Request' to 'Review Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 6",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Process Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 6
+    },
+    {
+      "recommendation_id": "TRN-007",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Correct Request -> Review Request",
+      "problem": "The transition from 'Correct Request' to 'Review Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 5",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Correct Request' to 'Review Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 5
+    },
+    {
+      "recommendation_id": "TRN-008",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Review Request -> Reject Request",
+      "problem": "The transition from 'Review Request' to 'Reject Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 5",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Review Request' to 'Reject Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 5
+    },
+    {
+      "recommendation_id": "TRN-009",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Approve Request -> Process Request",
+      "problem": "The transition from 'Approve Request' to 'Process Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 28",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Approve Request' to 'Process Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 28
+    },
+    {
+      "recommendation_id": "TRN-010",
+      "category": "Flow Optimization",
+      "priority": "LOW",
+      "affected_activity": "Approve Request -> Complete Request",
+      "problem": "The transition from 'Approve Request' to 'Complete Request' requires investigation.",
+      "evidence": [
+        "Transition frequency: 6",
+        "Transition score: 0.00"
+      ],
+      "impact": "Frequent or problematic transitions may indicate unnecessary handoffs, delays, or process complexity.",
+      "recommendation": "Review the transition from 'Approve Request' to 'Complete Request'. Assess whether the handoff can be simplified, automated, or performed in parallel.",
+      "score": 0.0,
+      "frequency": 6
+    }
+  ],
+  "recommendation_count": 10,
+  "high_priority": 2,
+  "medium_priority": 0,
+  "low_priority": 8,
+  "input_summary": {
+    "events": 0,
+    "cases": 0,
+    "activities": 0,
+    "transitions": 0,
+    "potential_bottlenecks": 2,
+    "potential_deviations": 1,
+    "activities_with_rework": 0
+  },
+  "method": "deterministic_rule_based",
+  "agent": "OptimizationAgent"
+}
